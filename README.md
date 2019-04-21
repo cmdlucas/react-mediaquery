@@ -6,7 +6,7 @@ This library is only compatible with React.
 
 ##### Install
 ```
-npm install react-mediaquery
+npm install react-mediaquery prop-types semantic-ui-react react-dom react
 ```
 OR
 

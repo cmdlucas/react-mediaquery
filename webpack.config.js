@@ -1,9 +1,13 @@
+const path = require('path');
 const nodeExternals = require('webpack-node-externals');
 module.exports = {
     entry: "./src/index.tsx",
+    mode: 'production',
+    target: 'node',
     output: {
-        filename: "bundle.js",
-        path: __dirname + "/dist"
+      filename: 'index.js',
+      path: path.resolve(__dirname, 'bin'),
+      libraryTarget: 'commonjs2'
     },
 
     // Enable sourcemaps for debugging webpack's output.
