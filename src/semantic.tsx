@@ -11,8 +11,8 @@ import {
 
 
 interface PropsInit {
-    [x: string]: boolean
-
+    isPhoneFromSSR: boolean
+    isTabletFromSSR: boolean
 }
 
 interface JsxProps {
@@ -82,7 +82,7 @@ export const getWidthFactory = (props: PropsInit) => () => {
     return typeof window === "undefined" ? ssrValue : window.innerWidth;
 };
 
-export const responsivePropsInit = (userAgent?: string) => {    
+export const responsivePropsInit = (userAgent?: string): PropsInit => {    
     const md = new MobileDetect( userAgent ? userAgent : window.navigator.userAgent);
     return {
         isPhoneFromSSR: !!md.phone(),
