@@ -3,7 +3,7 @@ import * as PropTypes from 'prop-types';
 import { Window_SuiM_Context } from './constants';
 import { widthFactory } from './semantic';
 
-export interface WindowWidthProps { width: () => number; }
+interface WindowWidthProps { width: () => number; }
 
 export class MqProvider extends React.Component<WindowWidthProps, {}> {
     static defaultProps = {

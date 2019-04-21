@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "A React helper library built upon semantic-ui to allow serving different components to different screens easily on server rendering or in browsers",
   "main": "./bin/index.js",
-  "types": "./bin/types/declaration.d.ts",
+  "types": "./bin/types/index.d.ts",
   "scripts": {
     "start": "node ./bin/index.js",
     "production": "webpack && node ./bin/index.js",
