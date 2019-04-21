@@ -15,7 +15,9 @@ Say we had a root DOM element we wanted to render different contents to accordin
 ```
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { MqProvider, MediaQuery, desktopScreen } from 'react-mediaquery'
+import { MqProvider, MediaQuery, 
+    desktopScreen, tabletScreen, mobileScreen 
+} from 'react-mediaquery'
 
 //It is required to use the Provider component as specified below before calling MediaQuery anywhere down the Tree
 
