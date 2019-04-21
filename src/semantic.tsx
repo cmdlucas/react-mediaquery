@@ -81,7 +81,7 @@ const getWidthFactory = (props: PropsInit) => () => {
 };
 
 const responsivePropsInit = (userAgent?: string): PropsInit => {    
-    const md = new MobileDetect( userAgent ? userAgent : window.navigator.userAgent);
+    const md = new MobileDetect( userAgent ? userAgent : (typeof window !== 'undefined' ? window.navigator.userAgent : "Mozilla NT") );
     return {
         isPhoneFromSSR: !!md.phone(),
         isTabletFromSSR: !!md.tablet()
