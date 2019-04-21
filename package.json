@@ -1,7 +1,7 @@
 {
   "name": "react-mediaquery",
   "version": "0.0.1",
-  "description": "A react library built upon semantic-ui to allow serving different components to different screens easily on servers or in browsers",
+  "description": "A React helper library built upon semantic-ui to allow serving different components to different screens easily on servers or in browsers",
   "main": "./bin/index.js",
   "types": "./bin/types/declaration.d.ts",
   "scripts": {
