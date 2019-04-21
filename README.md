@@ -41,16 +41,25 @@ ReactDOM.render(<Menu />, document.getElementById("root"))
 
 ```
 
-The Provider can be supplied explicitly with a specific screen width as seen below
+The Provider can be served an initial screen width either by supplying the user agent as seen below or by supplying a function that returns a specific number
 
 ```
 //...
-import { MqProvider, getWidthFactory, responsivePropsInit } from 'react-mediaquery'
+import { MqProvider, widthFactory } from 'react-mediaquery'
 //...
 
-const Menu = props => {
+const MenuA = props => {
     return (
-        <MqProvider width={getWidthFactory(responsivePropsInit())}>
+        <MqProvider width={widthFactory(request.userAgent))}>
+            //....
+        </MqProvider>
+    )
+}
+
+//This is also valid
+const MenuB = props => {
+    return (
+        <MqProvider width={() => 576}>
             //....
         </MqProvider>
     )

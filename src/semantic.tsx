@@ -72,9 +72,7 @@ const MobileAndTabletContainer = (props: JsxProps) => {
     )
 }
 
-export * from './constants';
-
-export const getWidthFactory = (props: PropsInit) => () => {
+const getWidthFactory = (props: PropsInit) => () => {
     const { isPhoneFromSSR, isTabletFromSSR } = props; 
     const ssrValue = isPhoneFromSSR ? Responsive.onlyMobile.maxWidth :
         isTabletFromSSR ? Responsive.onlyTablet.maxWidth :
@@ -82,12 +80,18 @@ export const getWidthFactory = (props: PropsInit) => () => {
     return typeof window === "undefined" ? ssrValue : window.innerWidth;
 };
 
-export const responsivePropsInit = (userAgent?: string): PropsInit => {    
+const responsivePropsInit = (userAgent?: string): PropsInit => {    
     const md = new MobileDetect( userAgent ? userAgent : window.navigator.userAgent);
     return {
         isPhoneFromSSR: !!md.phone(),
         isTabletFromSSR: !!md.tablet()
     };
+}
+
+export * from './constants';
+
+export const widthFactory = (userAgent?: string) => {
+    return getWidthFactory(responsivePropsInit(userAgent));
 }
 
 export const MediaQuery = (props: JsxProps) => {

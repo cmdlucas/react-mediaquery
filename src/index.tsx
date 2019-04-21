@@ -1,13 +1,13 @@
 import * as React from 'react'
 import * as PropTypes from 'prop-types';
 import { Window_SuiM_Context } from './constants';
-import { getWidthFactory, responsivePropsInit } from './semantic';
+import { widthFactory } from './semantic';
 
 export interface WindowWidthProps { width: () => number; }
 
 export class MqProvider extends React.Component<WindowWidthProps, {}> {
     static defaultProps = {
-        width: getWidthFactory(responsivePropsInit())
+        width: widthFactory()
     }
     static propTypes = {
         width: PropTypes.func.isRequired
