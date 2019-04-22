@@ -1,5 +1,4 @@
 import * as React from 'react';
-import * as _ from 'lodash'
 import * as MobileDetect from 'mobile-detect';
 import * as SemanticUI from 'semantic-ui-react';
 import {
