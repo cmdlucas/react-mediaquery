@@ -39,6 +39,6 @@ module.exports = {
     // externals: [nodeExternals()],
     externals: {
         "react": "React",
-        "react-dom": "ReactDom"
+        "react-dom": "ReactDOM"
     }
 };
