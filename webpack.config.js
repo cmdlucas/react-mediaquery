@@ -39,9 +39,6 @@ module.exports = {
     // externals: [nodeExternals()],
     externals: {
         "react": "React",
-        "prop-types": "PropTypes",
-        "react-dom": "ReactDom",
-        "semantic-ui-react": "SemanticUI",
-        "mobile-detect": "MobileDetect"
+        "react-dom": "ReactDom"
     }
 };
