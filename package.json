@@ -1,6 +1,6 @@
 {
   "name": "@cmdlucas/react-mediaquery",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A React helper library built upon semantic-ui to allow serving different components to different screens easily on server rendering or in browsers",
   "main": "./bin/index.js",
   "types": "./bin/types/index.d.ts",
