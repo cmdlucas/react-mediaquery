@@ -38,9 +38,6 @@ module.exports = {
     // dependencies, which allows browsers to cache those libraries between builds.
     // externals: [nodeExternals()],
     externals: [
-        {
-            "react": "React"
-        },
         nodeExternals()
     ]
 };
