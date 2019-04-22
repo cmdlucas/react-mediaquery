@@ -1,6 +1,6 @@
 {
   "name": "@cmdlucas/react-mediaquery",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A React helper library built upon semantic-ui to allow serving different components to different screens easily on server rendering or in browsers",
   "main": "./bin/index.js",
   "types": "./bin/types/index.d.ts",
@@ -33,7 +33,6 @@
     "jest": "^24.7.1",
     "lodash": "^4.17.11",
     "mobile-detect": "^1.4.3",
-    "prop-types": "^15.7.2",
     "semantic-ui-react": "^0.86.0",
     "source-map-loader": "^0.2.4",
     "ts-loader": "^5.3.3",
@@ -44,6 +43,7 @@
     "webpack-node-externals": "^1.7.2"
   },
   "peerDependencies": {
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }
