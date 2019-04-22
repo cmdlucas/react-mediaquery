@@ -1,25 +1,25 @@
-### About
+## About
 A React helper library built upon semantic-ui to make serving different components to different screens a breeze via server rendering or in browsers. Currently supports Mobile, Tablet and Desktop.
 
-### Usage
+## Usage
 This library is only compatible with React.
 
-##### Install
+#### Install
 ```
 npm install @cmdlucas/react-mediaquery
 ```
-OR
 
-##### Example
+#### Example
 Say we had a root DOM element we wanted to render different contents to according to screen width change
 ```
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { MqProvider, MediaQuery, 
     desktopScreen, tabletScreen, mobileScreen 
-} from 'react-mediaquery'
+} from '@cmdlucas/react-mediaquery'
 
-//It is required to use the Provider component as specified below before calling MediaQuery anywhere down the Tree
+//It is required to use the Provider component as specified below 
+//before calling MediaQuery anywhere down the Tree
 
 const Menu = props => {
     return (
@@ -41,7 +41,7 @@ ReactDOM.render(<Menu />, document.getElementById("root"))
 
 ```
 
-The Provider can be served an initial screen width either by supplying the user agent as seen below or by supplying a function that returns a specific number
+The Provider can be served an initial screen width either by supplying the user agent as seen below or by supplying a function that explicitly returns a specific number
 
 ```
 //...
@@ -70,6 +70,7 @@ const MenuB = props => {
 
 ### Additional knowledge
 You can supply other screen types to the MediaQuery component. Just import and use
+
 #### Supported screen types
   - desktopScreen
   - mobileScreen
@@ -77,5 +78,5 @@ You can supply other screen types to the MediaQuery component. Just import and u
   - mobileAndTablet
   - desktopAndTablet
 
-### License
+## License
 MIT
