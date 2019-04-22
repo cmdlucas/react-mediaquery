@@ -6,7 +6,7 @@ This library is only compatible with React.
 
 ##### Install
 ```
-npm install @cmdlucas/react-mediaquery prop-types semantic-ui-react mobile-detect
+npm install @cmdlucas/react-mediaquery
 ```
 OR
 
