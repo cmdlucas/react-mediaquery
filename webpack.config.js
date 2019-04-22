@@ -41,6 +41,7 @@ module.exports = {
         "react": "React",
         "prop-types": "PropTypes",
         "react-dom": "ReactDom",
-        "semantic-ui-react": "SemanticUI"
+        "semantic-ui-react": "SemanticUI",
+        "mobile-detect": "MobileDetect"
     }
 };
