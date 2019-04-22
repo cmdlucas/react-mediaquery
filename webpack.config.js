@@ -41,6 +41,6 @@ module.exports = {
         "react": "React",
         "prop-types": "PropTypes",
         "react-dom": "ReactDom",
-        "semantic-ui-react": "SemanticUiReact"
+        "semantic-ui-react": "SemanticUI"
     }
 };
